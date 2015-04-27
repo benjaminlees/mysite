@@ -16,18 +16,18 @@
 
 @include keyframe(rotates) {
     0% {
-        @include transform(rotate(-50deg));
+        @include transform(rotate(-40deg));
     } 
     100% {
-         @include transform(rotate(50deg));
+         @include transform(rotate(40deg));
     }
 }
 @include keyframe(rotatesright) {
     0% {
-        @include transform(rotate(50deg));
+        @include transform(rotate(40deg));
     } 
     100% {
-         @include transform(rotate(-50deg));
+         @include transform(rotate(-40deg));
     }
 }
 
