@@ -1,0 +1,65 @@
+@include keyframe(changeColour) {
+    0% {
+        color: yellow;
+    } 
+    33% {
+        color: blue;
+    }
+    66% {
+        color: green;
+    }
+    100% {
+        color: red;
+    }
+}
+
+
+@include keyframe(rotates) {
+    0% {
+        @include transform(rotate(-50deg));
+    } 
+    100% {
+         @include transform(rotate(50deg));
+    }
+}
+
+@include keyframe(skew) {
+    0% {
+        @include transform(skew(0deg, 180deg));
+    } 
+    100% {
+         @include transform(skew(180deg, 0deg));
+    }
+}
+
+@include keyframe(translate) {
+    0% {
+        @include transform(translate(0px, 100px));
+    } 
+    100% {
+         @include transform(translate(0px, -100px));
+    }
+}
+
+@include keyframe(threeD) {
+    0% {
+        @include transform(rotateX(150deg));
+    } 
+    100% {
+         @include transform(rotateX(0deg));
+    }
+}
+
+@include keyframe(fade) {
+    0% {
+        color: black;
+    }
+    100% {
+        color: white;
+    }
+};
+@include keyframe(centers) {
+    100% {
+        top: 50%;
+    }
+};
