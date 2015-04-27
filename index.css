@@ -278,8 +278,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  background-color: black; }
+  height: 100%; }
 
 .name {
   position: absolute;
@@ -293,23 +292,7 @@ body {
     font-family: Sans-serif;
     font-size: 100px;
     text-align: center;
-    color: white;
-    -o-animation-name: fade;
-    -moz-animation-name: fade;
-    -webkit-animation-name: fade;
-    animation-name: fade;
-    -o-animation-duration: 7s;
-    -moz-animation-duration: 7s;
-    -webkit-animation-duration: 7s;
-    animation-duration: 7s;
-    -o-animation-iteration-count: 1;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -o-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear; }
+    color: black; }
 
 .b {
   top: 5%;

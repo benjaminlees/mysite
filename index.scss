@@ -3,7 +3,6 @@ body {
 	padding:0;
 	width: 100%;
 	height: 100%;
-	background-color: black;
 }
 
 .name {
@@ -18,11 +17,11 @@ body {
 		font-family: $namefont;
 		font-size: 100px;
 		text-align: center;
-		color: white;
-		@include animation-name(fade);
-		@include animation-duration(7s);
-		@include animation-iteration-count(1);
-		@include animation-timing-function(linear);
+		color: black;
+		// @include animation-name(fade);
+		// @include animation-duration(7s);
+		// @include animation-iteration-count(1);
+		// @include animation-timing-function(linear);
 
 	}
 }
