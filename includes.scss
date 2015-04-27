@@ -22,6 +22,14 @@
          @include transform(rotate(50deg));
     }
 }
+@include keyframe(rotatesright) {
+    0% {
+        @include transform(rotate(50deg));
+    } 
+    100% {
+         @include transform(rotate(-50deg));
+    }
+}
 
 @include keyframe(skew) {
     0% {

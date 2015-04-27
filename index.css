@@ -86,6 +86,58 @@
     -ms-transform: rotate(50deg);
     -webkit-transform: rotate(50deg);
     transform: rotate(50deg); } }
+@-webkit-keyframes rotatesright {
+  0% {
+    -moz-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg); }
+  100% {
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg); } }
+@-moz-keyframes rotatesright {
+  0% {
+    -moz-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg); }
+  100% {
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg); } }
+@-o-keyframes rotatesright {
+  0% {
+    -moz-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg); }
+  100% {
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg); } }
+@keyframes rotatesright {
+  0% {
+    -moz-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg); }
+  100% {
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg); } }
 @-webkit-keyframes skew {
   0% {
     -moz-transform: skew(0deg, 180deg);
@@ -286,8 +338,7 @@ body {
   height: 100%; }
   .name span {
     position: absolute;
-    left: 40%;
-    right: 40%;
+    top: 40%;
     width: 20%;
     font-family: Sans-serif;
     font-size: 100px;
@@ -295,11 +346,11 @@ body {
     color: black; }
 
 .b {
-  top: 5%;
-  -o-animation-name: threeD;
-  -moz-animation-name: threeD;
-  -webkit-animation-name: threeD;
-  animation-name: threeD;
+  left: 5%;
+  -o-animation-name: rotates;
+  -moz-animation-name: rotates;
+  -webkit-animation-name: rotates;
+  animation-name: rotates;
   -o-animation-duration: 3s;
   -moz-animation-duration: 3s;
   -webkit-animation-duration: 3s;
@@ -318,11 +369,11 @@ body {
   animation-direction: alternate; }
 
 .e {
-  top: 25%;
-  -o-animation-name: changeColour;
-  -moz-animation-name: changeColour;
-  -webkit-animation-name: changeColour;
-  animation-name: changeColour;
+  left: 25%;
+  -o-animation-name: rotatesright;
+  -moz-animation-name: rotatesright;
+  -webkit-animation-name: rotatesright;
+  animation-name: rotatesright;
   -o-animation-duration: 3s;
   -moz-animation-duration: 3s;
   -webkit-animation-duration: 3s;
@@ -341,7 +392,7 @@ body {
   animation-direction: alternate; }
 
 .n {
-  top: 45%;
+  left: 45%;
   -o-animation-name: rotates;
   -moz-animation-name: rotates;
   -webkit-animation-name: rotates;
@@ -364,11 +415,11 @@ body {
   animation-direction: alternate; }
 
 .j {
-  top: 65%;
-  -o-animation-name: skew;
-  -moz-animation-name: skew;
-  -webkit-animation-name: skew;
-  animation-name: skew;
+  left: 65%;
+  -o-animation-name: rotatesright;
+  -moz-animation-name: rotatesright;
+  -webkit-animation-name: rotatesright;
+  animation-name: rotatesright;
   -o-animation-duration: 3s;
   -moz-animation-duration: 3s;
   -webkit-animation-duration: 3s;
@@ -387,15 +438,15 @@ body {
   animation-direction: alternate; }
 
 .i {
-  top: 85%;
-  -o-animation-name: translate;
-  -moz-animation-name: translate;
-  -webkit-animation-name: translate;
-  animation-name: translate;
-  -o-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  left: 85%;
+  -o-animation-name: rotates;
+  -moz-animation-name: rotates;
+  -webkit-animation-name: rotates;
+  animation-name: rotates;
+  -o-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -o-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;

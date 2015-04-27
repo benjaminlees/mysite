@@ -11,8 +11,7 @@ body {
 	height: 100%;
 	span {
 		position: absolute;
-		left: 40%;
-		right: 40%;
+		top: 40%;
 		width:20%;
 		font-family: $namefont;
 		font-size: 100px;
@@ -27,24 +26,24 @@ body {
 }
 
 .b {
-	top: 5%;
-	@include animation-name(threeD);
+	left: 5%;
+	@include animation-name(rotates);
 	@include animation-duration(3s);
 	@include animation-iteration-count(infinite);
 	@include animation-timing-function(linear);
 	@include animation-direction(alternate);
 }
 .e {
-	top: 25%;
+	left: 25%;
 
-	@include animation-name(changeColour);
+	@include animation-name(rotatesright);
 	@include animation-duration(3s);
 	@include animation-iteration-count(infinite);
 	@include animation-timing-function(linear);
 	@include animation-direction(alternate);
 }
 .n {
-	top: 45%;
+	left: 45%;
 	@include animation-name(rotates);
 	@include animation-duration(3s);
 	@include animation-iteration-count(infinite);
@@ -52,17 +51,17 @@ body {
 	@include animation-direction(alternate);
 }
 .j {
-	top: 65%;
-	@include animation-name(skew);
+	left: 65%;
+	@include animation-name(rotatesright);
 	@include animation-duration(3s);
 	@include animation-iteration-count(infinite);
 	@include animation-timing-function(linear);
 	@include animation-direction(alternate);
 }
 .i {
-	top: 85%;
-	@include animation-name(translate);
-	@include animation-duration(2s);
+	left: 85%;
+	@include animation-name(rotates);
+	@include animation-duration(3s);
 	@include animation-iteration-count(infinite);
 	@include animation-timing-function(linear);
 	@include animation-direction(alternate);
